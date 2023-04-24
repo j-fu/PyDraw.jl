@@ -14,7 +14,7 @@ end
 
 
 function pydraw(f; width = 300, height = 300, savefig = nothing, dpi = 100)
-    clf()
+    PyPlot.clf()
     ax = PyPlot.axes(aspect = 1.0)
     f()
     fig = PyPlot.gcf()
@@ -49,7 +49,7 @@ end
 
 text(p, txt; kwargs...) = PyPlot.text(p[1], p[2], txt; kwargs...)
 
-polygon(X, Y; kwargs...) = PyPlot.fill(X, Y; kwargs...)
+polygon(X::AbstractVector, Y::AbstractVector; kwargs...) = PyPlot.fill(X, Y; kwargs...)
 
 polygon(P::AbstractMatrix; kwargs...) = polygon(P[1, :], P[2, :]; kwargs...)
 
