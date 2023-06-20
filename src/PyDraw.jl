@@ -1,5 +1,6 @@
 module PyDraw
 import PyPlot
+import PyPlot: arrow,text
 import Triangulate
 
 function pyplot(f; width = 300, height = 300, savefig = nothing, dpi = 100)
@@ -71,6 +72,6 @@ circumcenter(PA, PB, PC) = Triangulate.tricircumcenter!([0.0, 0.0], PA, PB, PC)
 
 edgecenter(PA, PB) = [(PA[1] + PB[1]) / 2, (PA[2] + PB[2]) / 2]
 
-export pyplot, pydraw, line, arrow, text, polygon, circle, arc, circumcenter, edgecenter
+export pyplot, pydraw, text, arrow, line, polygon, circle, arc, circumcenter, edgecenter
 
 end
