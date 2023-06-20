@@ -1,7 +1,7 @@
 name = "PyDraw"
 uuid = "fce23259-28de-47d5-8db8-ab4b90e0411e"
 authors = ["Jürgen Fuhrmann <juergen-fuhrmann@web.de> and contributors"]
-version = "0.0.2"
+version = "0.0.3"
 
 [deps]
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
